@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f5f7;
+  margin: 0;
+  padding: 2rem;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.summary {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card strong {
+  font-size: 1.4rem;
+}
+
+.card.income strong { color: #2e7d32; }
+.card.expense strong { color: #c62828; }
+.card.balance strong { color: #1565c0; }
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.add-form select,
+.add-form input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.add-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #1565c0;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background: #0d47a1;
+}
+
+.chart-wrap {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tx-table th,
+.tx-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.tx-table tr.income td:nth-child(5) { color: #2e7d32; }
+.tx-table tr.expense td:nth-child(5) { color: #c62828; }
+
+.delete-btn {
+  border: none;
+  background: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  color: #c62828;
+}
